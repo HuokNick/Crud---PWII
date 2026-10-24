@@ -1,0 +1,12 @@
+create database dblojateste;
+
+use dblojateste;
+
+create table cliente(
+	id_cliente int auto_increment primary key,
+    nome varchar(50) not null,
+    documento varchar(14) not null unique,
+    telefone varchar(20)
+); 
+
+select * from cliente

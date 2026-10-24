@@ -1,3 +1,4 @@
+<a href="index.php" class="voltar">← Voltar</a>
 
 <?php
 include "conexao.php";
@@ -15,16 +16,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql->bind_param("sss", $nome, $documento, $telefone);
 
     if ($sql->execute()) {
-        echo "Cliente cadastrado!";
+        $mensagem = "Cliente cadastrado!";
     } else {
-        echo "Erro ao cadastrar cliente.";
+        $mensagem = "Erro ao cadastrar cliente.";
     }
 }
 ?>
 
-<form method="POST">
-    Nome: <input type="text" name="nome" required><br>
-    Documento: <input type="text" name="documento" required><br>
-    Telefone: <input type="text" name="telefone"><br>
-    <button type="submit">Cadastrar</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cliente</title>
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body>
+    <form method="POST">
+        Nome: <input type="text" name="nome" required><br>
+        Documento: <input type="text" name="documento" required><br>
+        Telefone: <input type="text" name="telefone"><br>
+        <button type="submit">Cadastrar</button>
+        <?php if (isset($mensagem)) { ?>
+            <p class="mensagem">
+                <?php echo $mensagem; ?>
+            </p>
+        <?php } ?>
+
+    </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #7138a5;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    color: #562782;
+}
+
+a {
+    text-align: center;
+    display: block;
+    margin: 5px 0;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.mensagem {
+    padding: 12px;
+    background-color: #e0f7e9;
+    color: #18753a;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f0f7;
+    margin: 0;
+    padding: 40px 20px;
+    color: #29213d;
+}
+
+form {
+    
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #00000015;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+h1, h2 {
+    text-align: center;
+    color: #7138a5;
+    margin-bottom: 25px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #8b45c6;
+}
+
+button {
+    padding: 12px;
+    background: #7138a5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #562782;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav a {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #7138a5;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #562782;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #7138a5;
+    color: white;
+}
